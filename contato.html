@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato — InPanic</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="prompt">C:\&gt;</span>
+        <span class="name">InPanic_</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">[ Início ]</a></li>
+        <li><a href="sobre.html">[ Sobre ]</a></li>
+        <li><a href="servicos.html">[ Serviços ]</a></li>
+        <li><a href="contato.html">[ Contato ]</a></li>
+      </ul>
+      <a href="contato.html" class="btn btn-primary nav-cta">&gt; Fale Conosco</a>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-mobile">
+    <a href="index.html">&gt; Início</a>
+    <a href="sobre.html">&gt; Sobre</a>
+    <a href="servicos.html">&gt; Serviços</a>
+    <a href="contato.html">&gt; Contato</a>
+    <a href="contato.html" class="btn btn-primary" style="text-align:center;margin-top:8px">&gt; Fale Conosco</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label">Entre em contato</p>
+      <h1 class="section-title">Vamos marcar uma reunião<br>que vira outra reunião<span class="blink">_</span></h1>
+      <p class="section-sub">Preencha o formulário. Respondemos em até 24h (úteis, em dias sem sprint, sem deploy e sem incidente em prod).</p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <section class="section" style="padding-top: 48px;">
+    <div class="container">
+      <div class="fade-up">
+        <div class="cmd-section-header">C:\INPANIC\CONTATO&gt; iniciar_formulario.exe</div>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div class="contact-info fade-up">
+          <div class="contact-item">
+            <span class="contact-item-prefix">[EMAIL]</span>
+            <div>
+              <h4>E-mail</h4>
+              <p>contato@inpanic.com.br</p>
+              <p style="font-size:11px;color:var(--text-dark);margin-top:4px">Resposta em até 24h (se não tiver produção caindo)</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item-prefix">[TEL]</span>
+            <div>
+              <h4>Telefone / WhatsApp</h4>
+              <p>(44) 9 9999-9999</p>
+              <p style="font-size:11px;color:var(--text-dark);margin-top:4px">Seg–Sex, 9h–18h (na teoria)</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item-prefix">[LOC]</span>
+            <div>
+              <h4>Localização</h4>
+              <p>Mandaguari, PR — Brasil</p>
+              <p style="font-size:11px;color:var(--text-dark);margin-top:4px">Reunião por meet, que poderia ser um e-mail</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item-prefix">[NET]</span>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>linkedin.com/company/inpanic</p>
+              <p style="font-size:11px;color:var(--text-dark);margin-top:4px">Posts motivacionais e memes de programador</p>
+            </div>
+          </div>
+          <div class="contact-item" style="flex-direction:column">
+            <span style="font-size:11px;color:var(--text-dark);margin-bottom:8px">// tempo médio real de resposta</span>
+            <div style="display:flex;align-items:center;gap:12px">
+              <span style="font-size:36px;color:var(--green)">4h</span>
+              <span style="font-size:12px;color:var(--text-dim)">urgente tem custo extra. Tudo é urgente. Cobramos extra de todo mundo.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário -->
+        <div class="form-card fade-up">
+          <h3>Nos conte o que você quer (vamos entregar outra coisa)</h3>
+
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Nome completo *</label>
+                <input type="text" id="nome" placeholder="João Silva" required />
+                <span class="form-error">Informe seu nome.</span>
+              </div>
+              <div class="form-group">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" placeholder="Opcional" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" placeholder="joao@empresa.com" required />
+                <span class="form-error">Informe um e-mail válido.</span>
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" placeholder="(44) 9 9999-9999" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="servico">Serviço de interesse *</label>
+              <select id="servico" required>
+                <option value="" disabled selected>Selecione um serviço...</option>
+                <option>Desenvolvimento Web</option>
+                <option>Aplicativo Mobile</option>
+                <option>Cloud &amp; DevOps</option>
+                <option>APIs &amp; Integrações</option>
+                <option>Inteligência Artificial</option>
+                <option>Segurança de Software</option>
+                <option>Outro / Não sei ainda</option>
+              </select>
+              <span class="form-error">Selecione um serviço.</span>
+            </div>
+            <div class="form-group">
+              <label for="orcamento">Orçamento estimado</label>
+              <select id="orcamento">
+                <option value="" disabled selected>Selecione uma faixa (opcional)</option>
+                <option>Até R$ 10.000</option>
+                <option>R$ 10.000 – R$ 50.000</option>
+                <option>R$ 50.000 – R$ 100.000</option>
+                <option>Acima de R$ 100.000</option>
+                <option>Não sei ainda</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Descreva seu projeto *</label>
+              <textarea id="mensagem" rows="5" placeholder="Nos conte o que você precisa: qual o problema a resolver, qual o público-alvo, existe algum prazo..." required></textarea>
+              <span class="form-error">Por favor, descreva seu projeto.</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit" style="width:100%;justify-content:center;padding:12px">
+              &gt; ENVIAR_E_TORCER.EXE
+            </button>
+          </form>
+
+          <div id="form-success" class="form-success">
+            <div class="success-icon">[ MENSAGEM RECEBIDA ]</div>
+            <h4>Alguém vai ler isso. Provavelmente.</h4>
+            <p>Seu formulário foi recebido com sucesso. Vamos adorar a ideia, subestimar o escopo e mandar proposta otimista.</p>
+            <a href="index.html" class="btn btn-outline" style="margin-top:20px;display:inline-flex">&gt; VOLTAR PRO INICIO</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="fade-up">
+        <div class="cmd-section-header">C:\INPANIC\CONTATO&gt; exibir_faq.exe</div>
+        <p class="section-label">Verdades que preferimos não falar</p>
+        <h2 class="section-title">Perguntas comuns</h2>
+      </div>
+      <div class="faq-grid fade-up">
+        <div class="faq-item">
+          <h4>Quanto tempo vai atrasar?</h4>
+          <p>O prazo inicial vezes 2.5. Projetos "simples" não existem. Você vai descobrir isso na terceira reunião de alinhamento.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Dá pra pagar parcelado?</h4>
+          <p>Sim. Startups têm desconto na proposta e prazo "mais flexível", que em português significa que o dev faz nas madrugadas.</p>
+        </div>
+        <div class="faq-item">
+          <h4>E se der errado, quem paga?</h4>
+          <p>Temos um contrato de 8 páginas que ninguém lê. O escopo está lá. O que você imaginou também. São coisas diferentes.</p>
+        </div>
+        <div class="faq-item">
+          <h4>E quando cair em produção?</h4>
+          <p>Abrimos um ticket. Classificamos como "baixa prioridade" se não for nossa culpa. Média se for. Alta se o cliente ligar nervoso.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><span class="prompt">C:\&gt;</span><span class="name">InPanic_</span></div>
+          <p>Entramos em pânico. Entregamos assim mesmo. Repita.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul><li><a href="sobre.html">Sobre nós</a></li><li><a href="sobre.html">Nossa equipe</a></li><li><a href="sobre.html">Valores</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Serviços</h4>
+          <ul><li><a href="servicos.html">Dev Web</a></li><li><a href="servicos.html">Apps Mobile</a></li><li><a href="servicos.html">Cloud & DevOps</a></li><li><a href="servicos.html">IA & Dados</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul><li><a href="contato.html">Fale conosco</a></li><li><a href="#">contato@inpanic.com.br</a></li><li><a href="#">(44) 9 9999-9999</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>C:\&gt; Copyright (c) 2025 InPanic Ltda. Nenhuma responsabilidade assumida.</span>
+        <span>exit /b 0</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
